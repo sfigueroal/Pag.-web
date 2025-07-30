@@ -1,0 +1,100 @@
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #eef1f5;
+  color: #2c3e50;
+  line-height: 1.6;
+}
+
+header {
+  background: linear-gradient(90deg, #2c3e50, #34495e);
+  color: #fff;
+  padding: 30px 0;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+header h1 {
+  margin: 0;
+  font-size: 2.5em;
+}
+
+header p {
+  margin-top: 10px;
+  font-style: italic;
+}
+
+nav {
+  background-color: #1abc9c;
+  display: flex;
+  justify-content: center;
+  padding: 15px 0;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  margin: 0 20px;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+nav a:hover {
+  color: #2c3e50;
+}
+
+section {
+  max-width: 900px;
+  margin: 30px auto;
+  background-color: #fff;
+  padding: 25px 30px;
+  border-radius: 12px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+}
+
+section h2 {
+  color: #1abc9c;
+  border-bottom: 2px solid #ecf0f1;
+  padding-bottom: 10px;
+  margin-bottom: 20px;
+}
+
+pre {
+  background-color: #ecf0f1;
+  padding: 15px;
+  border-radius: 6px;
+  overflow-x: auto;
+}
+
+code {
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 0.95em;
+  color: #2c3e50;
+}
+
+footer {
+  text-align: center;
+  padding: 15px;
+  background-color: #34495e;
+  color: white;
+  font-size: 0.9em;
+  margin-top: 40px;
+  box-shadow: 0 -4px 8px rgba(0,0,0,0.1);
+}
+
+@media (max-width: 768px) {
+  nav {
+    flex-direction: column;
+  }
+
+  nav a {
+    margin: 10px 0;
+  }
+
+  section {
+    margin: 15px;
+    padding: 20px;
+  }
+}

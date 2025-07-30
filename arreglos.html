@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Arreglos</title>
+  <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+  <header>
+    <h1>Arreglos</h1>
+    <p>Por Suemy Figueroa</p>
+     </header>
+
+  <nav>
+    <a href="index.html">Inicio</a>
+    <a href="recurrencia.html">Recurrencia y Árboles</a>
+    <a href="fundamentos.html">Fundamentos</a>
+    <a href="arreglos.html">Arreglos</a>
+    <a href="poo.html">POO</a>
+    <a href="microeconomia.html">Microeconomía</a>
+  </nav>
+
+
+  <main>
+    <section>
+      <h2>¿Qué son los arreglos?</h2>
+      <p>Los arreglos son estructuras de datos que almacenan una colección de elementos del mismo tipo. Cada elemento está ubicado en una posición llamada índice, que comienza desde 0.</p>
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR9v9Bls6Y_jcjS_tQMk0kQQxXRZn6irgdJiA&s" alt="Ejemplo de arreglo">
+    </section>
+
+    <section>
+      <h2>Tipos de arreglos</h2>
+      <ul>
+        <li><strong>Unidimensionales:</strong> listas simples (ej. nombres, edades).</li>
+        <li><strong>Bidimensionales:</strong> como una matriz (ej. tablero de ajedrez).</li>
+        <li><strong>Multidimensionales:</strong> estructuras con más de dos dimensiones.</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Ejemplo en Java</h2>
+      <pre><code>int[] numeros = {10, 20, 30, 40};
+System.out.println(numeros[2]); // Imprime 30</code></pre>
+    </section>
+
+    <section>
+      <h2>Ejemplo en PSeInt</h2>
+      <pre><code>Dimension notas[5]
+Para i <- 0 Hasta 4 Con Paso 1
+  Escribir "Ingrese nota:"
+  Leer notas[i]
+FinPara</code></pre>
+    </section>
+
+    <section>
+      <h2>Ejercicios</h2>
+      <ol>
+        <li>Crear un arreglo de 10 números enteros y calcular su suma total.</li>
+        <li>Leer 5 nombres y mostrarlos en orden inverso.</li>
+        <li>Buscar un elemento en un arreglo y mostrar si está presente.</li>
+      </ol>
+    </section>
+
+    <section>
+      <h2>Soluciones</h2>
+      <h3>Ejercicio 1 (Java):</h3>
+      <pre><code>int[] numeros = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
+int suma = 0;
+for (int i = 0; i < numeros.length; i++) {
+  suma += numeros[i];
+}
+System.out.println("Suma total: " + suma);</code></pre>
+
+      <h3>Ejercicio 2 (PSeInt):</h3>
+      <pre><code>Dimension nombres[5]
+Para i <- 0 Hasta 4 Con Paso 1
+  Escribir "Ingrese nombre:"
+  Leer nombres[i]
+FinPara
+Para i <- 4 Hasta 0 Con Paso -1
+  Escribir nombres[i]
+FinPara</code></pre>
+
+      <h3>Ejercicio 3 (Java):</h3>
+      <pre><code>Scanner sc = new Scanner(System.in);
+int[] datos = {5, 8, 12, 3, 9};
+System.out.print("Ingrese valor a buscar: ");
+int buscado = sc.nextInt();
+boolean encontrado = false;
+for (int i = 0; i < datos.length; i++) {
+  if (datos[i] == buscado) {
+    encontrado = true;
+    break;
+  }
+}
+if (encontrado)
+  System.out.println("Valor encontrado");
+else
+  System.out.println("Valor no encontrado");</code></pre>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 Suemy Figueroa. </p>
+  </footer>
+</body>
+</html>

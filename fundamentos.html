@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fundamentos de Programación</title>
+  <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+
+<header>
+  <h1>Fundamentos de Programación</h1>
+  <p>Por Suemy Figueroa</p>
+ </header>
+
+  <nav>
+    <a href="index.html">Inicio</a>
+    <a href="recurrencia.html">Recurrencia y Árboles</a>
+    <a href="fundamentos.html">Fundamentos</a>
+    <a href="arreglos.html">Arreglos</a>
+    <a href="poo.html">POO</a>
+    <a href="microeconomia.html">Microeconomía</a>
+  </nav>
+
+<section>
+  <h2>¿Qué son los Fundamentos de Programación?</h2>
+  <p>Son los conceptos básicos que necesitas para comenzar a programar. Incluyen el uso de variables, operadores, estructuras de control (condicionales y bucles), funciones y estructuras de datos simples.</p>
+
+  <h3>Variables y Tipos de Datos</h3>
+  <p>Las variables permiten almacenar datos en memoria. Por ejemplo, en Java:</p>
+  <pre><code>int edad = 20;
+float altura = 1.60f;
+String nombre = "Suemy";</code></pre>
+
+  <h3>Operadores</h3>
+  <p>Sirven para realizar operaciones matemáticas o lógicas:</p>
+  <ul>
+    <li><strong>+</strong>: suma</li>
+    <li><strong>-</strong>: resta</li>
+    <li><strong>*</strong>: multiplicación</li>
+    <li><strong>/</strong>: división</li>
+    <li><strong>&&</strong>: y lógico</li>
+    <li><strong>||</strong>: o lógico</li>
+  </ul>
+
+  <h3>Estructuras de Control</h3>
+  <p>Permiten controlar el flujo del programa:</p>
+  <pre><code>// Condicional
+if (edad >= 18) {
+  System.out.println("Eres mayor de edad");
+} else {
+  System.out.println("Eres menor de edad");
+}
+
+// Bucle
+for (int i = 0; i < 5; i++) {
+  System.out.println("Iteración: " + i);
+}</code></pre>
+
+  <h3>Funciones</h3>
+  <p>Son bloques de código reutilizables:</p>
+  <pre><code>public static int sumar(int a, int b) {
+  return a + b;
+}</code></pre>
+
+  <h2>Ejercicios Propuestos</h2>
+  <ol>
+    <li>Declara una variable para cada tipo de dato y muestra su valor por consola.</li>
+    <li>Escribe un programa que verifique si un número es par o impar.</li>
+    <li>Implementa una función que calcule el factorial de un número.</li>
+  </ol>
+
+  <h2>Soluciones</h2>
+  <h4>1. Declaración de variables:</h4>
+  <pre><code>int numero = 5;
+float precio = 12.5f;
+char letra = 'A';
+boolean activo = true;
+String texto = "Hola";
+System.out.println(numero + ", " + precio + ", " + letra + ", " + activo + ", " + texto);</code></pre>
+
+  <h4>2. Par o impar:</h4>
+  <pre><code>int num = 7;
+if (num % 2 == 0) {
+  System.out.println("Es par");
+} else {
+  System.out.println("Es impar");
+}</code></pre>
+
+  <h4>3. Factorial:</h4>
+  <pre><code>public static int factorial(int n) {
+  int resultado = 1;
+  for (int i = 1; i <= n; i++) {
+    resultado *= i;
+  }
+  return resultado;
+}</code></pre>
+</section>
+
+<footer>
+  <p>© 2025 Suemy Figueroa.</p>
+</footer>
+
+</body>
+</html>

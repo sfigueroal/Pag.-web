@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Recurrencia y Árboles</title>
+  <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+<header>
+  <h1>Recurrencia y Árboles</h1>
+  <p>Por Suemy Figueroa</p>
+ </header>
+
+  <nav>
+    <a href="index.html">Inicio</a>
+    <a href="recurrencia.html">Recurrencia y Árboles</a>
+    <a href="fundamentos.html">Fundamentos</a>
+    <a href="arreglos.html">Arreglos</a>
+    <a href="poo.html">POO</a>
+    <a href="microeconomia.html">Microeconomía</a>
+  </nav>
+
+<main>
+  <section>
+    <h2>¿Qué es la Recurrencia?</h2>
+    <p>La recurrencia es un concepto utilizado en matemáticas y programación para definir una solución en términos de versiones más pequeñas del mismo problema. Es la base de muchas soluciones recursivas.</p>
+    <p>Un ejemplo clásico es el cálculo de la serie de Fibonacci:</p>
+    <pre><code>int fibonacci(int n) {
+  if (n == 0) return 0;
+  if (n == 1) return 1;
+  return fibonacci(n - 1) + fibonacci(n - 2);
+}</code></pre>
+  </section>
+
+  <section>
+    <h2>Árboles en Estructura de Datos</h2>
+    <p>Un árbol es una estructura jerárquica formada por nodos. Cada nodo tiene un valor y puede tener hijos (otros nodos). El nodo superior se llama <strong>raíz</strong>.</p>
+    <p>Un tipo común es el árbol binario, donde cada nodo tiene como máximo dos hijos: izquierdo y derecho.</p>
+    <img src="https://asimov.cloud/web/image/7749-5b5bcdb5/Arbol%20Binario.jpg?access_token=c54171f3-cb22-4d4e-ad3f-4b9cbc5c55b1" alt="Ejemplo de árbol binario">
+
+    <p>Los recorridos de un árbol binario son:</p>
+    <ul>
+      <li>Inorden (izquierda, nodo, derecha)</li>
+      <li>Preorden (nodo, izquierda, derecha)</li>
+      <li>Postorden (izquierda, derecha, nodo)</li>
+    </ul>
+
+    <pre><code>// Recorrido Inorden en Java
+void inorden(Node nodo) {
+  if (nodo != null) {
+    inorden(nodo.izq);
+    System.out.print(nodo.valor + " ");
+    inorden(nodo.der);
+  }
+}</code></pre>
+  </section>
+
+  <section>
+    <h2>Ejercicios Propuestos con Solución</h2>
+    <h3>1. Factorial de un número</h3>
+    <p><strong>Enunciado:</strong> Crear una función recursiva que calcule el factorial de un número entero positivo.</p>
+    <pre><code>int factorial(int n) {
+  if (n <= 1) return 1;
+  return n * factorial(n - 1);
+}</code></pre>
+
+    <h3>2. Recorrido Preorden de un árbol</h3>
+    <p><strong>Enunciado:</strong> Escribir una función que recorra un árbol binario en preorden.</p>
+    <pre><code>void preorden(Node nodo) {
+  if (nodo != null) {
+    System.out.print(nodo.valor + " ");
+    preorden(nodo.izq);
+    preorden(nodo.der);
+  }
+}</code></pre>
+
+    <h3>3. Búsqueda de un valor en un árbol binario de búsqueda</h3>
+    <p><strong>Enunciado:</strong> Crear una función recursiva que verifique si un valor existe en un árbol binario de búsqueda (BST).</p>
+    <pre><code>boolean buscar(Node nodo, int valor) {
+  if (nodo == null) return false;
+  if (nodo.valor == valor) return true;
+  if (valor < nodo.valor) return buscar(nodo.izq, valor);
+  return buscar(nodo.der, valor);
+}</code></pre>
+  </section>
+</main>
+
+<footer>
+  <p>© 2025 Suemy Figueroa. </p>
+</footer>
+
+</body>
+</html>

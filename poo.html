@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Programación Orientada a Objetos</title>
+  <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+  <header>
+    <h1>Programación Orientada a Objetos</h1>
+    <p>Por Suemy Figueroa</p>
+     </header>
+
+  <nav>
+    <a href="index.html">Inicio</a>
+    <a href="recurrencia.html">Recurrencia y Árboles</a>
+    <a href="fundamentos.html">Fundamentos</a>
+    <a href="arreglos.html">Arreglos</a>
+    <a href="poo.html">POO</a>
+    <a href="microeconomia.html">Microeconomía</a>
+  </nav>
+
+  <main>
+    <section>
+      <h2>¿Qué es la POO?</h2>
+      <p>La Programación Orientada a Objetos (POO) es un paradigma de programación que organiza el código en torno a "objetos", que son instancias de "clases". Estos objetos contienen datos (atributos) y comportamientos (métodos).</p>
+    </section>
+
+    <section>
+      <h2>Principales conceptos</h2>
+      <ul>
+        <li><strong>Clase:</strong> Es un molde que define atributos y métodos comunes para un tipo de objeto.</li>
+        <li><strong>Objeto:</strong> Instancia de una clase, con sus propios valores en los atributos.</li>
+        <li><strong>Encapsulamiento:</strong> Ocultar los detalles internos y exponer solo lo necesario.</li>
+        <li><strong>Herencia:</strong> Permite crear nuevas clases basadas en clases existentes.</li>
+        <li><strong>Polimorfismo:</strong> Permite que métodos con el mismo nombre se comporten de forma distinta según el objeto.</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Ejemplo en Java</h2>
+      <pre><code>public class Animal {
+  String nombre;
+
+  public void hablar() {
+    System.out.println("Hace un sonido");
+  }
+}
+
+public class Perro extends Animal {
+  @Override
+  public void hablar() {
+    System.out.println("Guau guau");
+  }
+}
+
+public class Main {
+  public static void main(String[] args) {
+    Animal miPerro = new Perro();
+    miPerro.hablar(); // Guau guau
+  }
+}</code></pre>
+    </section>
+
+    <section>
+      <h2>Ejercicios</h2>
+      <p><strong>1.</strong> Crea una clase <code>Persona</code> con atributos nombre, edad y un método que salude.<br><strong>2.</strong> Crea una clase <code>Estudiante</code> que herede de <code>Persona</code> y tenga un atributo carrera.</p>
+    </section>
+
+    <section>
+      <h2>Solución propuesta</h2>
+      <pre><code>public class Persona {
+  String nombre;
+  int edad;
+
+  public void saludar() {
+    System.out.println("Hola, soy " + nombre);
+  }
+}
+
+public class Estudiante extends Persona {
+  String carrera;
+
+  public void mostrarCarrera() {
+    System.out.println("Estudio: " + carrera);
+  }
+}</code></pre>
+    </section>
+
+  
+  </main>
+
+  <footer>
+    <p>© 2025 Suemy Figueroa</p>
+  </footer>
+</body>
+</html>
